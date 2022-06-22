@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="portfolio_style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="shortcut icon" type="image/png" href="file:///D:/CODES/images/DR-LOGO-FOR-PORTFOLIO(HEADER).png" />  
+        <title>Danesh Raj - Motion Graphics Designer and 3D Animator</title>
+        <script src="https://kit.fontawesome.com/10a0cee9ab.js" crossorigin="anonymous"></script>
+        
+        
+    </head>
+    <body>
+        <section id="header">
+            <video autoplay loop muted plays-inline class="video-bg">
+                <source src="video/video banner for website_1.mp4" type="video/mp4">
+            </video>
+
+            <nav class="black">
+                <div class="logo"><img src="images/DR-LOGO-FOR-PORTFOLIO(BODY).png" alt="my logo"></div>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#header">SHOWREEL</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#portfolio">WORK</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            </nav>
+            
+            
+            <div class="text-box">
+                <h1>Hello, I'm Danesh</h1>
+                <p>I am a Motion Graphics Designer and a 3D Animator<br> bringing appealing graphics, 2D and 3D animation to display.</p>
+                <a href="#" onclick="toggle();" class="hero-btn">Showreel</a>
+            </div>
+   
+        </section>
+        <div class="trailer">
+            <video src="video/MY SHOWREEL 2022 - Medium bitrate.mp4" controls="true"></video>
+            <div class="crossmark">
+                <i class="fa-solid fa-xmark" onclick="toggle();"></i>
+            </div>
+            
+        </div>
+        <script type="text/javascript">
+            function toggle(){
+                var trailer= document.querySelector(".trailer")
+                var video= document.querySelector("video")
+                trailer.classList.toggle("active");
+                video.pause();
+                video.currentTime = 0;
+            }
+        </script>
+        
+        <script type="text/javascript">
+            window.addEventListener("scroll",function(){
+                var header = document.querySelector("nav");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+
+        </script>
+        
+        <!----About---->
+        <section id="about">
+            <div class="about-content">
+                <h2>GET TO KNOW ME</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about_row">
+                <div class="col">
+                    <img src="images/My Photo for Website.jpg">
+                    <h4>THE INTERSECTION OF LIFE....</h4>
+                
+                </div>
+
+                <div class="myinfo-col">
+                    <div class="col-1">
+                        
+                        <h4>WHO AM I?</h4>
+                        <p>I'm Danesh Raj and I'm a passionate 3D Animator and motion graphics designer, bringing appealing and engagging visuals in videos. I <br>am determined, committed and have an eye of detail in my <br>composition of works.</p>
+                    </div>
+
+                    <div class="col-2">
+                        
+                        <h4>WHAT DO I DO?</h4>
+                        <p>Design visual effects that include composting, graphic illustration,<br> title design, motion graphics and <br>3D Animation to tell a story, using a wide range of software like Blender, After Effects, 3ds Max, Illustrator <br>and many others.<br></p>
+                    </div>
+
+                    <div class="col-3">
+                        
+                        <h4>WHERE AM I?</h4>
+                        <p>I live in Subang Jaya, Selangor<br> and I'm currently the multimedia<br> designer at Flonix Enterprise Sdn Bhd, Bangsar. I commute to work using the train which is about <br>stone throw away from<br> my house.</p>
+                    </div>
+                </div>
+            </div>        
+        </section>
+
+        <!--Portfolio-->
+        <section id="portfolio">
+            <div class="portfolio-content">
+                <h2>PORTFOLIO</h2>
+                <div class="line"></div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#grid-container-all" class="btn"> ALL</a></li>
+                    <li><a href="https://vimeo.com/manage/folders/9336317" target="_blank" class="btn">MOTION GRAPHICS</a></li>
+                    <li><a href="https://vimeo.com/manage/folders/9336326" target="_blank" class="btn">3D</a></li>
+                </ul>   
+            </div>
+
+            <div id="grid-container-all">  <!--ALL-->
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/687633865?h=e167aec0a9" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>BALL BOUNCE LOOP ANIMATION</h4>
+                        <p>3d</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/716358038?h=470039ac99" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>ABSTRACT LOOP ANIMATION</h4>
+                        <p>3d</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/702359591?h=9a5dfb954d" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>SOCIAL MEDIA MOTION GRAPHIC</h4>
+                        <p>motion graphic</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/687635835?h=9a3b1a2e5d" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>FILLING APPLES IN BASKET</h4>
+                        <p>3d</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/697626955?h=21186732b5" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>LOW GRAVITY BLOOMY BALLS CHARACTER BREAKDANCE</h4>
+                        <p>3d</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/707549568?h=f3dce4f87e" width="640" height="360" frameborder="0" allowfullscreen></iframe>                   
+                    </div>
+                    <div class="description">
+                        <h4>QUANTUM COMPUTER - Explainer Video</h4>
+                        <p>motion graphic</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/687636493?h=a7867014d2" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>DYNAMIC TYPOGRAPHY ANIMATION</h4>
+                        <p>motion graphic</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/717549002?h=47c0598251" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>CLOTH & FLUID SIMULATION</h4>
+                        <p>3d</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/692737091?h=e46ec21e23" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>COFFEE TIME</h4>
+                        <p>3d</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/687634200?h=1012be703d" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>DINER LIGHT IN PUB</h4>
+                        <p>motion graphic</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/687637031?h=205ebed7c4" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>ZOMBIE AWAKENING</h4>
+                        <p>motion graphic</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-item">
+                    <div class="videowrapper">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/687637179?h=ef1382ae16" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h4>TITLE ANIMATION</h4>
+                        <p>motion graphic</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        <!--Web/Print-->
+
+            <div class="printweb">
+                <h2>PRINT / WEB</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="printweb-container">
+                <div class="printweb-content">
+                    <div class="card-item1">
+                        <img src="images/ceasar A4 flyer - final-01.jpg">
+                    </div>
+
+                    <div class="text">
+                        <h3>Caesar - Luxury Watch Poster</h3>
+                    </div>
+                </div>
+
+                <div class="printweb-content">
+                    <div class="card-item2">
+                        <img src="images/caesar watch poster Final 1 (PRINTABLE - OUTLINE CREATED)-01.jpg">
+                    </div>
+
+                    <div class="text">
+                        <h3>Ceaser - Watch Promo Flyer</h3>
+                    </div>
+                </div>
+
+                <div class="printweb-content">
+                    <div class="card-item3">
+                        <img src="images/Barry Smith flyer design-01.jpg">
+                    </div>
+
+                    <div class="text">
+                        <h3>Barry Smith - Luggage Promo Flyer</h3>
+                    </div>
+                </div>
+
+                <div class="printweb-content">
+                    <div class="card-item4">
+                        <img src="images/Luggage promo poster2-01.jpg">
+                    </div>
+
+                    <div class="text">
+                        <h3>Barry Smith - Airport Luggage Poster</h3>
+                    </div>
+                </div>
+
+                <div class="printweb-content">
+                    <div class="card-item5">
+                        <img src="images/LORI_LUGGAGE_POSTER DESIGN(modified)-01.jpg">
+                    </div>
+
+                    <div class="text">
+                        <h3>Barry Smith - Luggage Promo Poster</h3>
+                    </div>
+                </div>
+
+                <div class="printweb-content">
+                    <div class="card-item6">
+                        <img src="images/Corroco Hand bag Poster-01.jpg">
+                        
+                    </div>
+
+                    <div class="text">
+                        <h3>Corroco - Handbag Flyer</h3>
+                    </div>
+                </div>
+
+                <div class="printweb-content">
+                    <div class="card-item7">
+                        <img src="images/Caesar - Classy Watch Poster-01.jpg">
+                        
+                    </div>
+
+                    <div class="text">
+                        <h3>Caesar - Classy Watch Poster</h3>
+                    </div>
+                </div>
+
+                <div class="printweb-content">
+                    <div class="card-item8">
+                        <img src="images/Restore Surgical Mask Poster red-01.jpg">
+                    </div>
+
+                    <div class="text">
+                        <h3>Restore - Surgical Mask</h3>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+
+        <!--Software-->
+        <section id="software">
+            <div class="software-content">
+                <h2>SOFTWARE</h2>
+                <div class="line"></div>
+            </div>
+
+            <div id="software-container">
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/blender-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>BLENDER</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/3DsMax-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>AUTODESK 3DS MAX</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/Maya-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>AUTODESK MAYA</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/Figma-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>FIGMA</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/Ae-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>AFTER EFFECTS</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/Pr-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>PREMIERE PRO</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>PHOTOSHOP</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/AI-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>ILLUSTRATOR</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/Dw-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>DREAMWEAVER</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/Id-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>INDESIGN</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/Ableton-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>ABLETON LIVE</h3>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <a class="soft-logo"><img src="images/DESATURATED LOGO/Protools-desaturated-logo-cut-out.png" width="100em" height="100em"></a>
+                    <div class="content-title">
+                        <h3>PRO TOOLS</h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Contact-->
+        <section id="contact">
+
+            <form onsubmit="sendEmail(); reset(); return false;">             
+                <h4>SAY HELLO</h4>
+                <p >daneshrajletchumanan@gmail.com</p>
+                <div class="row">
+                    <div class="input-group">
+                        <input type="text" id="name" required>
+                        <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+                    </div>
+        
+                    <div class="input-group">
+                        <input type="email" id="email" required>
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" rows="8" required></textarea>
+                    <label for="message"><i class="fa-solid fa-comments"></i> Message</label>
+                </div>
+                <button type="submit">SUBMIT</button>
+                
+            </form>
+        </section>
+
+        <!--Javascript contact form to email-->
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+            function sendEmail(){
+                Email.send({
+                    SecureToken : "2914b03c-91f6-400f-b9fe-50acc076b5e3",
+
+                    To : 'daneshrajletchumanan@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "Name: " + document.getElementById("name").value
+                        + "<br> Email: " + document.getElementById("email").value
+                        + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                message => alert("Message Sent Succesfully")
+                );
+            }
+            
+        </script>
+
+
+        <!--Footer-->
+        <section id="footer">
+            <div class="footer-content">
+                <div class="getintouch">
+                    <a class="logo-footer"><img src="images/DR-LOGO-FOR-PORTFOLIO(BODY).png"></a>
+                    <div class="name-jobrole">
+                        <h4>DANESH RAJ</h4>
+                        <p>3D & MOTION GRAPHICS</p>                   
+                    </div>
+                    <div class="foot-link">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/danesh-raj-5ba836201/" target="_blank">LINKEDIN</a></li>
+                            <li><a href="https://vimeo.com/user157575514" target="_blank">VIMEO</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-line"></div>
+                <div class="copyright">
+                    <p>© 2021 by Danesh Raj. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!---Javascript toggle for mobile device menu--->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
